@@ -151,22 +151,25 @@ E.g postgres
  
  - Binding the Ports 
 → Steps: 
-	   - 1. Stop running images. ( docker stop ‘id’)
+- Stop running images. ( docker stop ‘id’)
      
-     - 2.  Binding it two different ports using ‘run’ commands.
-            E.g `docker run -p 6000:6379 redis`
-            <p> 6000- port of the host
-                6979- port of the container </p>
+- Binding it two different ports using ‘run’ commands.
+E.g 
+```
+docker run -p 6000:6379 redis`
+6000- port of the host
+6979- port of the container
+```
                 
-     - 3. Binding Check
-          `docker ps`
+- Binding Check
+ `docker ps`
           
-     - 4. Stop all running docker
-	        `docker stop id`
+- Stop all running docker
+`docker stop id`
      
-     - 4. Running container in detached mode.
-          `docker run -p 6000:6379 -d redis`
-          `docker run -p 6001:6379 -d redis:5.0`
+- Running container in detached mode.
+`docker run -p 6000:6379 -d redis`
+`docker run -p 6001:6379 -d redis:5.0`
              
 
 ## Debugging Containers
